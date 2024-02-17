@@ -1,0 +1,14 @@
+name: rayyan
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: self-hosted
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Run your commands
+        run: |
+          echo "Hello from the self-hosted runner!"
